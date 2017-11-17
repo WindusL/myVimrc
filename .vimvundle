@@ -9,8 +9,11 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+" 前端emmet插件
 Plugin 'vim-scripts/Emmet.vim'
+" 打开指定文件插件
 Plugin 'vim-scripts/ctrlp.vim'
+" 左侧导航插件
 Plugin 'scrooloose/nerdtree'
 
 
