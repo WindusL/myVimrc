@@ -8,14 +8,20 @@
 
 ## 插件快捷键
 `Ctrl + p` 文件查找
+
 `Ctrl + e` emmet 快捷键 
+
 `,1` 文件导航
+
 `,2` vim8 内置 Terminal
+
 `,cf` 格式化代码
+
 `option + z` 有道单词翻译
 
 ## 命令
 `:Toc` 纵向 markdown 导航
+
 `:Toch` 横向 markdown 导航
 
 **更多命令查看相关插件文档**
