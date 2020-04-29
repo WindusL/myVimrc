@@ -5,6 +5,7 @@
 - `.vimplug` plug 插件配置文件
 - `.vimlsplug` lsp 插件配置文件
 - `.zshrc` zsh 配置文件
+- `256_jungle.vim` vim 配色文件(放到~/.vim/colors文件夹下)
 
 ## 插件快捷键
 `Ctrl + p` 文件查找
