@@ -1,5 +1,17 @@
 " 行号
 set nu
+" 打开相对行号
+set relativenumber
+" 忽略大小写 (该命令配合smartcase使用较好，否则不要开启)
+set ignorecase
+" 模式查找时智能忽略大小写
+set smartcase
+" vim自身命令行模式智能补全
+set wildmenu
+" 高亮搜索
+set hlsearch
+" 增量搜索
+set incsearch
 
 " tabstop 表示一个 tab 显示出来是多少个空格的长度，默认 8。
 " softtabstop 表示在编辑模式的时候按退格键的时候退回缩进的长度，当使用
