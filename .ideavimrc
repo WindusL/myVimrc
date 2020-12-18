@@ -59,4 +59,4 @@ nnoremap <Leader>sa :action $SelectAll<CR>
 " debug
 nnoremap <Leader>db :action Debug<CR>
 " run
-nnoremap <Leader>rn :action Run<CR>
+nnoremap <Leader>dn :action Run<CR>
