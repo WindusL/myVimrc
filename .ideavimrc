@@ -47,16 +47,18 @@ nnoremap <Leader>gs :action GotoSuperMethod<CR>
 " 跳转到测试
 nnoremap <Leader>gt :action GotoTest<CR>
 
-" 前进，相当似于eclipse中的alt+方向右键
-nnoremap gf :action Forward<CR>
-" 后退，相当于eclipse中的alt+方向左键
-nnoremap gb :action Back<CR>
-
 " 模式化代码
-nnoremap <Leader>ft :action ReformatCode<CR>
+nnoremap <Leader>fc :action ReformatCode<CR>
 " Select All
 nnoremap <Leader>sa :action $SelectAll<CR>
 " debug
 nnoremap <Leader>db :action Debug<CR>
 " run
 nnoremap <Leader>dn :action Run<CR>
+" stop
+nnoremap <Leader>sp :action Stop<CR>
+
+" 前进，相当似于eclipse中的alt+方向右键
+nnoremap gf :action Forward<CR>
+" 后退，相当于eclipse中的alt+方向左键
+nnoremap gb :action Back<CR>
