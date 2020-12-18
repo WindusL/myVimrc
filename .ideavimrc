@@ -1,0 +1,62 @@
+let mapleader = " "
+nmap , <Leader>
+
+" 高亮搜索
+set hlsearch
+" 增量搜索
+set incsearch
+" 显示当前模式
+set showmode
+" 共享系统粘贴板
+set clipborad=unamed
+" 打开行号
+set number
+" 打开相对行号
+set relativenumber
+" 忽略大小写 (该命令配合smartcase使用较好，否则不要开启)
+set ignorecase
+" 模式查找时智能忽略大小写
+set smartcase
+" vim自身命令行模式智能补全
+set wildmenu
+" 总是显示状态栏
+set laststatus=2
+" 显示光标当前位置
+set ruler
+" 高亮显示当前行/列
+set cursorline
+" 开启IdeaVimExtension插件解决英文切换的问题
+set keep-english-in-normal-and-restore-in-insert
+
+
+" 弹出输入框，可以跳到指定类、文件、符号
+nnoremap <Leader>c :action GotoClass<CR>
+nnoremap <Leader>f :action GotoFile<CR>
+nnoremap <Leader>s :action GotoSymbol<CR>
+
+" 显示使用
+nnoremap <Leader>su :action ShowUsages<CR>
+" 查找使用
+nnoremap <Leader>fu :action FindUsages<CR>
+" 跳转到定义
+nnoremap <Leader>gd :action GotoDeclaration<CR>
+" 跳转到实现
+nnoremap <Leader>gi :action GotoImplementation<CR>
+" 跳转到方法的声明
+nnoremap <Leader>gs :action GotoSuperMethod<CR>
+" 跳转到测试
+nnoremap <Leader>gt :action GotoTest<CR>
+
+" 前进，相当似于eclipse中的alt+方向右键
+nnoremap gf :action Forward<CR>
+" 后退，相当于eclipse中的alt+方向左键
+nnoremap gb :action Back<CR>
+
+" 模式化代码
+nnoremap <Leader>ft :action ReformatCode<CR>
+" Select All
+nnoremap <Leader>sa :action $SelectAll<CR>
+" debug
+nnoremap <Leader>db :action Debug<CR>
+" run
+nnoremap <Leader>rn :action Run<CR>
