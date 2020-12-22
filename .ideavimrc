@@ -47,7 +47,7 @@ nnoremap <Leader>gs :action GotoSuperMethod<CR>
 " 跳转到测试
 nnoremap <Leader>gt :action GotoTest<CR>
 
-" 模式化代码
+" 格式化代码
 nnoremap <Leader>fc :action ReformatCode<CR>
 " Select All
 nnoremap <Leader>sa :action $SelectAll<CR>
