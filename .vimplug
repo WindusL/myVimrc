@@ -36,6 +36,8 @@ Plug 'mhinz/vim-signify'
 " markdown 
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+" Docker自动提示（配合coc-snippets使用）
+Plug 'ekalinin/Dockerfile.vim'
 
 call plug#end()
 
