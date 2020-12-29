@@ -23,8 +23,6 @@ Plug 'ianva/vim-youdao-translater'
 Plug 'yianwillis/vimcdoc'
 " 前端emmet插件
 Plug 'vim-scripts/Emmet.vim'
-" python模式
-Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 " 语法检测
 Plug 'w0rp/ale'
 " 代码格式化
@@ -95,20 +93,6 @@ let g:rainbow_conf = {
 	\		'css': 0,
 	\	}
 	\}
-
-
-"-------------------------------------------------------------------------------
-" python-mode Setting
-"-------------------------------------------------------------------------------
-
-" 禁用每行后面带颜色线条
-let g:pymode_options_colorcolumn = 0
-" 行最大长度提示
-let g:pymode_options_max_line_length = 100
-" 设置python-mode sys_path
-" let g:pymode_paths = ['', '/users/windus/.pyenv/versions/3.7.3/lib/python37.zip', '/users/windus/.pyenv/versions/3.7.3/lib/python3.7', '/users/windus/.pyenv/versions/3.7.3/lib/python3.7/lib-dyn    load', '/users/windus/.pyenv/versions/3.7.3/lib/python3.7/site-packages']
-" run python 快捷键 
-let g:pymode_run_bind = '<leader>r'
 
 
 "-------------------------------------------------------------------------------
