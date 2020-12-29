@@ -1,0 +1,36 @@
+{
+	"suggest.minTriggerInputLength": 1,
+
+	"suggest.noselect": false,
+
+	"suggest.enablePreview": true, 
+
+	"suggest.snippetIndicator": "⭐︎",
+
+	"languageserver": {
+		"lua": {
+			"command": "lua-lsp",
+			"filetypes": ["lua"]
+		},
+		"ccls": {
+              "command": "ccls",
+              "filetypes": ["c", "cpp", "objc", "objcpp"],
+              "rootPatterns": [".ccls", "compile_commands.json", ".vim/",  ".git/",".hg/"],
+              "initializationOptions": {
+                 "cache": {
+                   "directory": "/tmp/ccls"
+                 },
+                "clang": {
+                  "resourceDir": "/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1",
+                  "extraArgs": [
+                      "-isystem",
+                      "/usr/local/opt/llvm/include/c++/v1",
+                      "-I",
+                      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"
+                  ]
+                }
+               }
+            }
+	}
+
+}

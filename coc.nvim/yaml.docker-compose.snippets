@@ -1,0 +1,119 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+snippet version "version" b
+version: "$1"
+endsnippet
+
+snippet services "services" b
+services: 
+  $1
+endsnippet
+
+snippet build "build" b
+build: 
+  $1
+endsnippet
+
+snippet context "build->context" b
+context: 
+endsnippet
+
+snippet dockerfile "build->dockerfile" b
+dockerfile: 
+endsnippet
+
+snippet args "build->args" b
+args: 
+  $1
+endsnippet
+
+snippet labels "build->labels" b
+labels: 
+  - "$1"
+endsnippet
+
+snippet target "build->target" b
+target: 
+endsnippet
+
+snippet command "command ["COMMAND","PARAM1","PARAM2"]" b
+command: ["$1"]
+endsnippet
+
+snippet container_name "container_name" b
+container_name: 
+endsnippet
+
+snippet depends_on "depends_on" b
+depends_on: 
+  - $1
+endsnippet
+
+snippet deploy "deploy" b
+deploy: 
+  $1
+endsnippet
+
+snippet endpoint_mode "deploy->endpoint_mode: vip|dnsrr" b
+endpoint_mode: 
+endsnippet
+
+snippet labels "deploy->labels" b
+labels
+endsnippet
+
+snippet mode "deploy->mode: replicated|global" b
+mode: 
+endsnippet
+
+snippet replicas "deploy-replicas" b
+replicas: 
+endsnippet
+
+snippet entrypoint "entrypoint" b
+entrypoint: 
+endsnippet
+
+snippet environment "environment" b
+environment: 
+endsnippet
+
+snippet expose "expose" b
+expose: 
+endsnippet
+
+snippet image "image" b
+image: 
+endsnippet
+
+snippet restart "restart: no|always|on-failure|unless-stopped" b
+restart: 
+endsnippet
+
+snippet volumes "volumes" b
+volumes: 
+  - ""
+endsnippet
