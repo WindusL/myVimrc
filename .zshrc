@@ -63,7 +63,8 @@ ZSH_THEME="amuse"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions zsh-syntax-highlighting git)
+# plugin 'z' https://github.com/rupa/z
+plugins=(zsh-autosuggestions zsh-syntax-highlighting git z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -122,8 +123,6 @@ export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 eval "$(pyenv init -)"
 #vim8.1
 alias vim='/usr/local/Cellar/vim/8.1.1900/bin/vim'
-# rupa/z https://github.com/rupa/z
-. /usr/local/etc/profile.d/z.sh
 # trash
 alias rm='/usr/local/bin/trash -F'
 
