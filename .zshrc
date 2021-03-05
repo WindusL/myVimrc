@@ -63,7 +63,7 @@ ZSH_THEME="amuse"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions git)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -95,9 +95,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# zsh代码高亮
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # 配置粘贴上屏慢问题
 # This speeds up pasting w/ autosuggest
