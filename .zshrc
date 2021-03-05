@@ -123,7 +123,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 eval "$(pyenv init -)"
 #vim8.1
 alias vim='/usr/local/Cellar/vim/8.1.1900/bin/vim'
-# trash
+# brew install trash
 alias rm='/usr/local/bin/trash -F'
 
 export NVIM_COC_LOG_LEVEL=debug
