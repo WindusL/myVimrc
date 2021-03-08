@@ -125,6 +125,7 @@ eval "$(pyenv init -)"
 alias vim='/usr/local/Cellar/vim/8.1.1900/bin/vim'
 # brew install trash
 alias rm='/usr/local/bin/trash -F'
+alias sl='sh ~/.shells/ssh-list.sh'
 
 export NVIM_COC_LOG_LEVEL=debug
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles
