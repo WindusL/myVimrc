@@ -9,8 +9,8 @@ set incsearch
 set showmode
 " 共享系统粘贴板
 set clipborad=unamed
-" 打开行号
-set number
+" 显示行号
+set nu
 " 打开相对行号
 set relativenumber
 " 忽略大小写 (该命令配合smartcase使用较好，否则不要开启)
@@ -21,10 +21,6 @@ set smartcase
 set wildmenu
 " 总是显示状态栏
 set laststatus=2
-" 显示光标当前位置
-set ruler
-" 高亮显示当前行/列
-set cursorline
 " 开启IdeaVimExtension插件解决英文切换的问题
 set keep-english-in-normal-and-restore-in-insert
 
@@ -47,18 +43,18 @@ nnoremap <Leader>gs :action GotoSuperMethod<CR>
 " 跳转到测试
 nnoremap <Leader>gt :action GotoTest<CR>
 
-" 格式化代码
+" 前进，相当似于eclipse中的alt+方向右键
+nnoremap gp :action Forward<CR>
+" 后退，相当于eclipse中的alt+方向左键
+nnoremap gn :action Back<CR>
+
+" 模式化代码
 nnoremap <Leader>fc :action ReformatCode<CR>
 " Select All
 nnoremap <Leader>sa :action $SelectAll<CR>
 " debug
 nnoremap <Leader>db :action Debug<CR>
 " run
-nnoremap <Leader>dn :action Run<CR>
+nnoremap <Leader>ru :action Run<CR>
 " stop
-nnoremap <Leader>sp :action Stop<CR>
-
-" 前进，相当似于eclipse中的alt+方向右键
-nnoremap gf :action Forward<CR>
-" 后退，相当于eclipse中的alt+方向左键
-nnoremap gb :action Back<CR>
+nnoremap <Leader>st :action Stop<CR>
